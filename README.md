@@ -1,2 +1,2 @@
-# vikram-gupta-resume
+# Vikram-Gupta-Resume
 Vikram Gupta resume, software engineer
