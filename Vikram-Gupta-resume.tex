@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[left=0.4 in,top=0.6 in,right=0.4 in,bottom=0.6 in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+
+
+
+
+
+
+% and the actual content starts here
+
+\begin{document}
+%==== Profile ====%
+\vspace*{-36pt}
+\begin{center}
+	{\Huge \scshape {Vikram Gupta}}\\
+	\vspace{2mm}
+	
+	
+	$\cdot$ \faMapMarker \hspace{.5mm} Pune, Maharashtra, India
+	$\cdot$ \faEnvelope \hspace{.5mm} \href{vikramguptavit@gmail.com} {vikramguptavit@gmail.com}
+	$\cdot$ \faMobile \hspace{.5mm} (+91) 8149105351 
+	
+	$\cdot$ \faGithub \hspace{.5mm} \href{https://github.com/vikramguptavit} {GitHub}
+	$\cdot$ \faLinkedinSquare \hspace{.5mm} \href{https://www.linkedin.com/in/vikramguptavit/} {LinkedIn}
+	$\cdot$ \faMedium \hspace{.5mm} \href{https://medium.com/@basecs101} {Medium}
+	
+\end{center}
+
+
+
+% experience 
+\subsection*{\large EXPERIENCE }
+\hrule
+\vspace{1em}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.2em
+	
+	\item
+	      \headerrow
+	      {\textbf{Integral Ad Science}}
+	      {\textbf{Pune, India}}
+	      \headerrow
+	      {\emph{Senior Software Engineer}}
+	      {\emph{April 2022 -- Present}}
+	      \begin{itemize*}
+	      	\item Designed and Developed APIs for \textbf{Scalable Kubernetes Application} - Mobile App Scorer Service.
+	      	\item Architect Translation Services to have \textbf{Service and Cluster Auto Scaling, and Improved Logging} mechanism.
+	      	\item Spearheaded \textbf{the Innovation} areas for my team and Conceptualized, Designed, and Demoed multiple Product POCs for Research and Development vertical.
+	      \end{itemize*}
+	
+	
+	\item
+	      \headerrow
+	      {\textbf{Integral Ad Science}}
+	      {\textbf{Pune, India}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{June 2021 -- April 2022}}
+	      \begin{itemize*}
+	      	\item Engineered a \textbf{Scalable}, \textbf{Reliable} and \textbf{Containerised} Language Translation Service using AWS ECS.
+	      	\item The NLP based service \textbf{translates millions of requests/day} and supports \textbf{42 Languages}.
+	        \item This new service reduced the overall error rate to  \textbf{0.25\%} from  \textbf{5\%} compared to third party service and saved  \textbf{1M\$} annually.
+	      \end{itemize*}
+			
+			
+	\item
+	      \headerrow
+	      {\textbf{Avaya}}
+	      {\textbf{Pune, India}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{July 2018 -- June 2021}}
+	      \begin{itemize*}
+	      	\item Formulated and Integrated Manual Dialing feature for TCPA compliant customers to the Product.
+	      	\item Worked on various \textbf{back-end services}, their \textbf{enhancements}, and \textbf{CFD fixes}. Demoed \textbf{Product Improvement POCs}.
+	      \end{itemize*}
+	      
+	      
+	      	      	      
+	\item
+	      \headerrow
+	      {\textbf{ Avaya }}
+	      {\textbf{Pune, India}}
+	      \headerrow
+	      {\emph{Development Intern}}
+	      {\emph{Jan 2018 -- June 2018}}
+	      \begin{itemize*}
+	      	\item \textbf{Built a Slack Bot} for integrating Avaya Aura
+	      	CM features. The Bot was trained to register slack users for CM features like dial number, voice mail, etc. 
+	      	\item \textbf{Integrated the Custom Command} "/dial num". \textbf{Developed Dashboard} for API usage and report analysis.
+	      \end{itemize*}
+	      	      	      
+\end{itemize}
+
+
+% skills
+\subsection*{\large SKILLS}
+\hrule
+\vspace{1em}
+
+\hyphenpenalty=1000
+\begin{itemize} [leftmargin=1em,noitemsep]
+    \parskip=0.2em
+	\item \textbf{• Problem Solving: }
+	     Data Structures, Design and Analysis of Algorithms
+	     \parskip=0.2em
+	\item \textbf{• Languages :}
+	      Java, Python, Shell  Scripting
+	      \parskip=0.2em
+	\item \textbf{• Web Services:}
+	      REST, gRPC
+	      \parskip=0.2em
+	\item \textbf{• Databases: }
+	      MySQL , PostgreSQL
+	      \parskip=0.2em
+	\item \textbf{• Infrastructure :}
+	      Docker, Kubernetes, AWS
+	      \parskip=0.2em
+	\item \textbf{• VCS and Tools:}
+    	  GIT, GitHub, Jira, Confluence, Sonar
+    \parskip=0.2em
+	\item \textbf{• Frameworks:}
+	      Spring, SpringBoot, Hibernate, Junit5
+	\parskip=0.2em
+	\item \textbf{• Tools and IDEs:}
+	   VSC, IntelliJ, PyCharm
+
+\end{itemize}
+
+
+% education 
+\subsection*{\large EDUCATION}
+\hrule
+\vspace{1em}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.2em
+	\item
+	      \headerrow
+	      {\textbf{VISHWAKARMA INSTITUTE OF TECHNOLOGY}}
+	      {\textbf{Pune, India}}
+	      \headerrow
+	      {\emph{B.Tech Computer Science and Engineering} (\text{CPI:} 8.83/10)}
+	      {\emph{June 2014 -- May 2018}}
+	      \headerrow
+	      {\textbf{S.M. CHOKSEY JUNIOR COLLEGE }}
+	      {\textbf{Pune, India}}
+	      \headerrow
+	      {\emph{HSC - Mathematics and Computer Science} (\text 83.85\%)}
+	      {\emph{June 2012 -- May 2014}}
+	   
+	      	      	      
+\end{itemize}
+
+
+
+% Awards
+\subsection*{\large ACHIEVEMENTS AND AWARDS}
+\hrule
+\vspace{1em}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.2em
+			
+	\item
+	       \headerrow
+	      {\textbf{• Systems And Methods for Automated Reviews of Messages in a Group Messaging Service}}
+	      {\textbf{Patent Application}}
+	      \headerrow
+	      {\emph{The United States Patent and Trademark Office (USPTO)}}
+	      {\emph{Sept 2022}}
+	   
+	       \headerrow
+	      {\textbf{• Integral Ad Science - Global Hackathon Winner}}
+	      {\textbf{ Global Hackathon}}
+	      \headerrow
+	      {\emph{Integral Ad Science - (Led the team that won the global hackathon)}}
+	      {\emph{July 2022}}
+	      
+	      \headerrow
+	      {\textbf{• Systems And Methods To Terminate an Active
+Conversation}}
+	      {\textbf{Patent Application}}
+	      \headerrow
+	      {\emph{The United States Patent and Trademark Office (USPTO)}}
+	      {\emph{January 2021}}
+
+	      
+	      	      	      
+\end{itemize}
+\end{document}
